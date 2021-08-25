@@ -1,0 +1,21 @@
+.style {
+  border: 1px solid black;
+  padding: 0;
+}
+.card-img-overlay {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  position: relative;
+  padding: 0;
+}
+.card-img-overlay p {
+  position: relative;
+  bottom: 60px;
+  left: 15px;
+}
+.text-style {
+  margin: 0;
+  padding: 0 0 30px 0;
+  text-align: center;
+}

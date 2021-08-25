@@ -1,0 +1,12 @@
+.img-fluid {
+  border-radius: 50% !important;
+}
+.userList {
+  margin: 0px auto;
+  border: 1px solid #e8e8e8;
+}
+.userImg {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
