@@ -1,15 +1,24 @@
 import React from "react";
-import { Header } from "./components/Header/header";
-import { Footer } from "./components/Footer/footer";
-import Users from "./components/Users/users";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
 
 const App = () => {
   return (
-    <React.Fragment>
-      <Header />
-      <Users />
-      <Footer />
-    </React.Fragment>
+    <Router>
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about/About" component={About} />
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
